@@ -1,0 +1,71 @@
+//JAVASCRIPT Apuntes
+//Leandro Funes
+- Lenguaje interpretado.
+- Lenguaje de tipado dinámico.
+- Tipos primitivos: undefined, null, number, string, boolean, (symbol).
+
+CASTEO/COERCIÓN
+Acto de cambiar de un tipo de elemento a otro.
+COERCIÓN EXPLÍCITA VS IMPLÍCITA
+- Explícito => const x = 42; const explicit = String(x);
+- Implícito => const x=42; const implicit = x + "";
+
+TIPOS DE EVALUACIONES
+==     coerciona los tipos.
+===  requiere tipos equivalentes.
+
+VALORES FALSOS (false)
+- undefined, nuul, false, ( +0, -0, NaN )
+
+VALORES VERDADEROS (true)
+- {}, [], Object, etc...
+
+PRIMITIVOS VS OBJETOS
+- Primitivos son inmutables.
+- Objetos son mutables y almacenados por referencia (referencia del objeto al que se le cambiarán valores sin afectar los que esán en memoria).
+
+ALMACENAMIENTO POR REFERENCIA
+const o = { nombre:'Leo', apellido:'Fun', edad:33 };
+const o2 = o;
+
+ALMACENAMIENTO POR VALOR
+const o3 = { nombre:'Leo', apellido:'Fun', edad:33 };
+const o4 = Object.assign({}, o3); (copia superficial)
+
+COPIA PROFUNDA DE UN OBJETO CON OBJETOS ENCAPSULADOS
+function deepCopy(objeto) {
+         const claves = Object.keys(obj);
+         const nuevoObjeto = {};
+
+         for (let i=0; i < claves.length; i++) {
+                  const clave = claves[i];
+                  if (typeof objeto[clave] === 'object' ) {
+                           nuevoObjeto[clave]=deepCopy(objeto[clave]);
+                  } else {
+                           nuevoObjeto[clave]=objeto[clave];
+                  }
+         }
+         return nuevoObjeto;
+}
+
+SHADOWING/SOMBREADO
+Crea una nueva variable con el mismo nombre de otra. La nueva ecplipsa/sombrea la anterior (deja de existir) y la reemplaza.
+
+VIDA DE LAS VARIABLES
+- Lexical Scoping (var) => Desde que son decalradas hasta que la función finaliza.
+- Block Scoping (const, let) => Hasta que la llave se cierre => } .
+
+HOINSTING
+- Iza la declaración de una variable "var" una función "function".
+- De la función "function" toma el return.
+- De la variable "var" sólo toma la declaración (no el valor).
+
+EVALUACIÓN DE FUNCIÓN
+La declaración de una función en la parte interior de un archivo está disponible en la parte superior (principio).
+- Funciona únicamente con:
+         - var func = () => {};
+         - function fun () {};
+
+VARIABLE GLOBAL
+Toda variable que no tenga declaración de tipo.
+- variable = 'HolaMundo'; 
