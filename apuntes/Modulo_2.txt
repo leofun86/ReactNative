@@ -1,0 +1,36 @@
+//JAVASCRIPT / REACT NATIVE / APUNTES
+//Leandro Funes
+
+IIFE => Inmediatly Invoked Function Expression (Función invocada de inmediato)
+
+	- Es una función sin nombre.
+	- Se invoca en el momento de invocación.
+	- Crea cierres.
+	- No agrega o modifica objetos globales.
+
+	EJEMPLO
+	const contador = ( ()=> {
+		let contador = 0;
+		// Esto restringe únicamente al acceso a los retornos de las funciones,
+		// quedando denegado el acceso a las variables declaradas.
+		return {
+			sumar: () => contador = contador +1,
+			mostrar: () => console.log(contador)
+		}
+	} )()
+	//Invocar los returns:
+	- contador.sumar();
+	- contador.mostrar();
+
+//FUNCIONES DE ORDEN SUPERIOR
+Funciones que toman como parámetro funciones.
+
+	//Las más comunes:
+		map: recorre cada valor de un array y aplica los cambios que definimos => array.map(res => console.log(res*2));
+		filter: filtra los valores del array => array.filter(res => res > 2);
+		reduce: reduce los valores del array a uno => array.reduce((num1, num2) => num1 + num2);
+
+//EXECUTION STACK / CALL STACK / Pila de ejecución/llamada
+- Funciones que otras funciones invocan son colocadas en las pila de ejecución.
+- Cuando se completa cada función, se elimina de la pila y se ejecuta el siguiente bloque de código.
+

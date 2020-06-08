@@ -1,4 +1,4 @@
-//JAVASCRIPT Apuntes
+//JAVASCRIPT / REACT NATIVE / APUNTES
 //Leandro Funes
 - Lenguaje interpretado.
 - Lenguaje de tipado dinámico.

@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <title>React Native</title>
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+	<script>
+		const person = {
+			name: 'Leo',
+			greet: function () { console.log(`Hola, ${this.name}`) }
+		}
+		console.log(person.greet())
+		
+		const person2 = {
+			name:'Magiver',
+			greet: function() { console.log(`Hola, ${this.name}`) }
+		}
+		
+		const greet = person.greet;
+		this.name=person2.name;
+		greet()
+		
+		const amigo = { name: 'Cachila', }
+		amigo.greet = person.greet;
+		console.log(amigo.greet());
+		
+		const amig = amigo.greet.bind({name: 'Estoy bindeado1'});
+		amigo.greet.call({name: 'Estoy bindeado2'});
+		amigo.greet.apply({name: 'Estoy bindeado3'});
+		amig()
+		
+		const nuevaPersona = {
+			name: 'Calamaro',
+			greet: () => {this.name}
+		}
+		console.log(nuevaPersona.greet())
+		
+		
+	</script>
+</body>
+</html>

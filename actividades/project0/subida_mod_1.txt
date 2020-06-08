@@ -1,0 +1,5 @@
+REACT NATIVE / Módulo 1 / Ejercicio New Todos
+Leandro Funes
+
+Video => https://youtu.be/Ub844fLKmOo
+DIrectorio con archivos => https://github.com/leofun86/ReactNative/tree/master/actividades/project0
