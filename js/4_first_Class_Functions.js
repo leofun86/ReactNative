@@ -19,7 +19,7 @@
 	function map(array, funcion) {
 		const newArr = [];
 		array.forEach(num => newArr.push(funcion(num)));
-		return newArr;
+	 	return newArr;
 	}
 	function sumar(num) { return num+1; }
 	const arr = [1, 2, 3, 4];
