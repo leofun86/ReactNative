@@ -1,0 +1,11 @@
+//JAVASCRIPT / REACT NATIVE / APUNTES
+//Leandro Funes
+
+//PROGRAMACIÓN IMPERATIVA
+Describe una serie de pasos para llegar a la resolución de un problema
+Un ejemplo es JavaScript, React.
+
+//PROGRAMACIÓN DECLARATIVA
+Describe cómo quieres llegar a un determinado problema. Es sólo un detalle de implementación de cómo obtenerlo.
+Un ejemplo es HTML.
+
