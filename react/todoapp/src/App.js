@@ -2,7 +2,6 @@ import React from 'react';
 import './App.css';
 
 let id = 0;
-const cero = 0;
 
 const Todo = props => (
   <li>
