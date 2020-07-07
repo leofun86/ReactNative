@@ -11,7 +11,7 @@ const Todo = props => (
     &nbsp;&nbsp;
     <input type="checkbox" checked={props.todo.checked} onChange={props.toggleCheck} value="check" />
     &nbsp;&nbsp;
-    <button onClick={props.removeTodo}>eliminar</button>
+    <button class="btn btn-danger" onClick={props.removeTodo}>eliminar</button>
   </li>
 );
 
@@ -52,7 +52,7 @@ class App extends React.Component {
   render() {
     return (
       <div>
-        <button onClick={()=> this.addTodo()}>Agregar TODO</button>
+        <button class="btn btn-success" onClick={()=> this.addTodo()}>Agregar TODO</button>
         <p>
           <span>Todos: {this.state.todos.length}</span>
           &nbsp;&nbsp;
