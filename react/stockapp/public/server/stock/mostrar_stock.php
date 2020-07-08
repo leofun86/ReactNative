@@ -19,7 +19,7 @@
     header("Access-Control-Allow-Methods: PUT");
     header("Access-Control-Allow-Headers: *");
     require '../conexion.php';
-    //sleep(2);
+    //sleep(4);
 
     $mysqli->set_charset('utf8');
 
