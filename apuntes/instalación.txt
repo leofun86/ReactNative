@@ -1,0 +1,31 @@
+// NODE
+    // Actualizar
+    npm install -g npm@latest
+    // Borrar caché de NPM
+    npm cache clean --force
+    // Instalar React
+    npm install -g create-react-app
+    // Creación de proyecto
+    create-react-app mi-nueva-app
+    // Comprobar directorio de proyecto
+    cd mi-nueva-app
+    // Iniciar aplicación (dentro de directorio del proyecto)
+    npm start
+
+// REACT NATIVE
+// https://gallardoramos.com/comenzar-proyecto-react-native/
+    // Instalación
+    npm install -g create-react-native-app
+    // Crear proyecto
+    create-react-native-app mi-nueva-app
+    //Comprobar directorio creado
+    cd mi-nueva-app/
+    // Lanzar proyecto
+    npm start
+    // Lanzar aplicación
+        // Android
+        npm run android
+        //Ios
+        npm run ios
+        //Web
+        npm run web
