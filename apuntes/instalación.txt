@@ -1,5 +1,5 @@
-// NODE
-    // Actualizar
+// REACT
+    // Actualizar node
     npm install -g npm@latest
     // Borrar caché de NPM
     npm cache clean --force
